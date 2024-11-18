@@ -1,4 +1,4 @@
-FROM        node:16-bullseye-slim
+FROM        node:17-bullseye-slim
 
 LABEL       author="zen" maintainer="ekotspm93@gmail.com"
 
