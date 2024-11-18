@@ -21,25 +21,6 @@ jobs:
           registry: ghcr.io
           username: zentrust1
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      # 3. Build and push Docker image 1
-      - name: Build and Push Docker Image 1
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          file: ./14/Dockerfile
-          push: false
-          tags: ghcr.io/zen/nodejspm2:14
-
-      # 4. Build and push Docker image 2s7
-      - name: Build and Push Docker Image 2
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          file: ./16/Dockerfile
-          push: false
-          tags: ghcr.io/zen/nodejspm2:16
-
       # 5. Build and push Docker image 3
       - name: Build and Push Docker Image 3
         uses: docker/build-push-action@v4
