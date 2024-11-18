@@ -28,7 +28,7 @@ jobs:
         with:
           context: .
           file: ./14/Dockerfile
-          push: true
+          push: false
           tags: ghcr.io/zen/nodejspm2:14
 
       # 4. Build and push Docker image 2s7
@@ -37,7 +37,7 @@ jobs:
         with:
           context: .
           file: ./16/Dockerfile
-          push: true
+          push: false
           tags: ghcr.io/zen/nodejspm2:16
 
       # 5. Build and push Docker image 3
