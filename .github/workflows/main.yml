@@ -31,7 +31,7 @@ jobs:
           push: true
           tags: ghcr.io/zen/nodejspm2:14
 
-      # 4. Build and push Docker image 2
+      # 4. Build and push Docker image 2s7
       - name: Build and Push Docker Image 2
         uses: docker/build-push-action@v4
         with:
