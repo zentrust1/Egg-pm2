@@ -7,7 +7,8 @@ RUN         apt update \
             && useradd -m -d /home/container container
 
 RUN         npm install npm@latest -g
-RUN         npm install pm2 -g
+RUN         npm install pm2@latest -g 
+
 
 USER        container
 ENV         USER=container HOME=/home/container
